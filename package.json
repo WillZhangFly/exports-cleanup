@@ -1,0 +1,62 @@
+{
+  "name": "unused-exports",
+  "version": "0.0.1",
+  "description": "Find and remove unused exports - clean up dead code from your codebase",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "unused-exports": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli/index.ts",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "unused",
+    "exports",
+    "dead-code",
+    "cleanup",
+    "refactor",
+    "typescript",
+    "bundle",
+    "size",
+    "lint",
+    "analyzer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willzhangfly/unused-exports.git"
+  },
+  "bugs": {
+    "url": "https://github.com/willzhangfly/unused-exports/issues"
+  },
+  "homepage": "https://github.com/willzhangfly/unused-exports#readme",
+  "funding": {
+    "type": "buymeacoffee",
+    "url": "https://buymeacoffee.com/willzhangfly"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "fast-glob": "^3.3.2",
+    "ora": "^8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0"
+  }
+}
