@@ -35,12 +35,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/willzhangfly/unused-exports.git"
+    "url": "git+https://github.com/WillZhangFly/exports-cleanup.git"
   },
   "bugs": {
-    "url": "https://github.com/willzhangfly/unused-exports/issues"
+    "url": "https://github.com/WillZhangFly/exports-cleanup/issues"
   },
-  "homepage": "https://github.com/willzhangfly/unused-exports#readme",
+  "homepage": "https://github.com/WillZhangFly/exports-cleanup#readme",
   "funding": {
     "type": "buymeacoffee",
     "url": "https://buymeacoffee.com/willzhangfly"
