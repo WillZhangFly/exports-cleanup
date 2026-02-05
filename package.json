@@ -1,6 +1,6 @@
 {
   "name": "exports-cleanup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Find and remove unused exports - clean up dead code from your codebase",
   "type": "module",
   "main": "./dist/index.js",
