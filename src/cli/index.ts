@@ -10,7 +10,7 @@ import { printScanResult, printCompactResult, printJsonResult, printSupportMessa
 const program = new Command();
 
 program
-  .name('unused-exports')
+  .name('exports-cleanup')
   .description('Find unused exports in your codebase')
   .version('0.0.1');
 

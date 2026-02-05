@@ -1,8 +1,8 @@
-# unused-exports
+# exports-cleanup
 
 > Find unused exports in your codebase - clean up dead code and reduce bundle size
 
-[![npm version](https://img.shields.io/npm/v/unused-exports.svg)](https://www.npmjs.com/package/unused-exports)
+[![npm version](https://img.shields.io/npm/v/exports-cleanup.svg)](https://www.npmjs.com/package/exports-cleanup)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Problem
@@ -11,7 +11,7 @@ You export 100 functions. Only 20 are actually used. Dead code bloats your bundl
 
 ## Solution
 
-`unused-exports` scans your codebase, tracks all imports, and finds exports that are never used anywhere.
+`exports-cleanup` scans your codebase, tracks all imports, and finds exports that are never used anywhere.
 
 ## Features
 
@@ -26,10 +26,10 @@ You export 100 functions. Only 20 are actually used. Dead code bloats your bundl
 
 ```bash
 # Run directly with npx (recommended)
-npx unused-exports
+npx exports-cleanup
 
 # Or install globally
-npm install -g unused-exports
+npm install -g exports-cleanup
 ```
 
 ## Usage
@@ -38,27 +38,27 @@ npm install -g unused-exports
 
 ```bash
 # Scan current directory
-npx unused-exports
+npx exports-cleanup
 
 # Scan specific directory
-npx unused-exports ./src
+npx exports-cleanup ./src
 
 # Compact output
-npx unused-exports --compact
+npx exports-cleanup --compact
 ```
 
 ### Include Types
 
 ```bash
 # Also check type and interface exports
-npx unused-exports --include-types
+npx exports-cleanup --include-types
 ```
 
 ### Show All Exports
 
 ```bash
 # Show used exports too
-npx unused-exports --show-used
+npx exports-cleanup --show-used
 ```
 
 ## Example Output
@@ -116,7 +116,7 @@ Potential savings: 23.4 KB
 
 ## Comparison with Alternatives
 
-| Feature | unused-exports | TypeScript | ESLint | ts-prune | knip |
+| Feature | exports-cleanup | TypeScript | ESLint | ts-prune | knip |
 |---------|---------------|------------|--------|----------|------|
 | Find unused exports | ✅ | ❌ | ❌ | ✅ | ✅ |
 | Bundle size estimate | ✅ | ❌ | ❌ | ❌ | ❌ |
@@ -128,7 +128,7 @@ Potential savings: 23.4 KB
 ## CLI Options
 
 ```
-Usage: unused-exports [options] [path]
+Usage: exports-cleanup [options] [path]
 
 Arguments:
   path                    Directory to scan (default: ".")
@@ -148,13 +148,13 @@ Options:
 ```yaml
 # GitHub Actions
 - name: Check for unused exports
-  run: npx unused-exports
+  run: npx exports-cleanup
   # Exits with code 1 if unused exports found
 
 # With threshold (using jq)
 - name: Check unused exports count
   run: |
-    npx unused-exports --json > unused.json
+    npx exports-cleanup --json > unused.json
     COUNT=$(cat unused.json | jq '.unusedExports')
     if [ "$COUNT" -gt 10 ]; then
       echo "Too many unused exports: $COUNT"
@@ -165,7 +165,7 @@ Options:
 ## Programmatic Usage
 
 ```typescript
-import { analyzeExports } from 'unused-exports';
+import { analyzeExports } from 'exports-cleanup';
 
 const result = await analyzeExports('./src', {
   includeTypes: false,
@@ -217,7 +217,7 @@ This project is maintained in my free time. If it helped clean up your codebase,
 
 - ⭐ Star the repo—it helps others discover this tool
 - 📢 Share with your team or on social media
-- 🐛 [Report bugs or suggest features](https://github.com/willzhangfly/unused-exports/issues)
+- 🐛 [Report bugs or suggest features](https://github.com/willzhangfly/exports-cleanup/issues)
 - ☕ [Buy me a coffee](https://buymeacoffee.com/willzhangfly) if you'd like to support development
 
 Thank you to everyone who has contributed, shared feedback, or helped spread the word!

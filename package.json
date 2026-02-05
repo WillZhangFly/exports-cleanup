@@ -1,12 +1,12 @@
 {
-  "name": "unused-exports",
+  "name": "exports-cleanup",
   "version": "0.0.1",
   "description": "Find and remove unused exports - clean up dead code from your codebase",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "unused-exports": "./dist/cli/index.js"
+    "exports-cleanup": "./dist/cli/index.js"
   },
   "files": [
     "dist",
