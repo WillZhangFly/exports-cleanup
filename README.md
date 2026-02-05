@@ -217,7 +217,7 @@ This project is maintained in my free time. If it helped clean up your codebase,
 
 - ⭐ Star the repo—it helps others discover this tool
 - 📢 Share with your team or on social media
-- 🐛 [Report bugs or suggest features](https://github.com/willzhangfly/exports-cleanup/issues)
+- 🐛 [Report bugs or suggest features](https://github.com/WillZhangFly/exports-cleanup/issues)
 - ☕ [Buy me a coffee](https://buymeacoffee.com/willzhangfly) if you'd like to support development
 
 Thank you to everyone who has contributed, shared feedback, or helped spread the word!
